@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Floral Dreamland</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('file-WPzVHcGjavFGjDnprfrWBQ'); /* Background */
+      background-size: cover;
+      background-position: center;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 38px;
+      color: #ffddee;
+    }
+    .gallery {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border-radius: 20px;
+      margin: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+    .poem {
+      margin: 60px auto;
+      width: 80%;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 20px;
+      font-size: 20px;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>“Step into a dreamy wonderland where butterflies whisper secrets, flowers glow with joy, and magic blooms in every petal! ✨🦋🌸💖🌷💫🌼🍃🌺🌈🌟🌹🎀🧚‍♀️”</h1>
+
+  <div class="gallery">
+    <img src="file-5hW9yqu8o5B57h3JKRkMKd" alt="Elegant roses">
+    <img src="file-LQhSHQmUGpQWBkkbvVTDgB" alt="Colorful garden">
+    <img src="file-9VHoHGKCxuCgDoquHWnUH6" alt="Pink blossoms">
+  </div>
+
+  <div class="poem">
+    🌸 In the garden of dreams, where petals fall like rain, <br>
+    Every flower whispers love, soft and pure, without pain. 💖🌷<br><br>
+
+    🦋 Butterflies dance like joy set free, <br>
+    In a world made of colors and fantasy. 🌈🌼<br><br>
+
+    🌺 The roses blush in morning light, <br>
+    Spreading fragrance and sheer delight. 🌹✨<br><br>
+
+    💫 With every bloom, a story grows, <br>
+    Of silent winds and how beauty flows. 🍃🧚‍♀️<br><br>
+
+    🌷 Let your heart bloom, just like this field, <br>
+    Where every emotion is softly revealed. 🎀🌸<br><br>
+
+    🌟 Welcome, dear soul, to this floral spell, <br>
+    Where magic and peace forever dwell. 🌼🌷🌟<br>
+  </div>
+
+</body>
+<div class="poem">
+  🦋 In a land beyond clouds, where time melts away,<br>
+  Butterflies sing softly, guiding dreams that stray. 💭🌸<br><br>
+
+  🌷 Flowers bloom with gentle pride,<br>
+  As morning dew clings to their side. 💧🌼<br><br>
+
+  🧚‍♀️ Fairies hum in golden beams,<br>
+  Telling tales of love in moonlit dreams. 🌙✨<br><br>
+
+  🌹 Roses speak with velvet sighs,<br>
+  While petals float like lullabies. 🎶🌺<br><br>
+
+  🦋 Wings of blue, wings of flame,<br>
+  Each one carries a secret name. 📜💫<br><br>
+
+  🌈 Rainbows curl around the breeze,<br>
+  And butterflies dance between the trees. 🌳🌟<br><br>
+
+  🍃 The leaves applaud with every gust,<br>
+  In a garden built on hope and trust. ❤️🌼<br><br>
+
+  💐 Tulips laugh in shades of spring,<br>
+  As bees and birds together sing. 🎵🐦🐝<br><br>
+
+  🧡 The daisies sway in golden light,<br>
+  Holding sunshine through the night. 🌞🌕<br><br>
+
+  🌻 Even the silence here is sweet,<br>
+  Beneath each flower, a heartbeat. 💓🌸<br><br>
+
+  🦋 Whispering wings brush your skin,<br>
+  Awakening love that lives within. 💖✨<br><br>
+
+  🌺 So close your eyes, and just believe,<br>
+  The garden’s magic will never leave. 🌌🌼<br><br>
+
+  🌟 You’re not just walking in the flowers —<br>
+  You’re walking through your soul’s own powers. 🦋🌸💫<br><br>
+
+  🎀 Let go of pain, let peace unfold,<br>
+  In this butterfly world of dreams untold. 🌈🌷💖<br><br>
+
+  🦋 Welcome home, where the heart can sing,<br>
+  With every flower… and every wing. 🌹🧚‍♀️✨
+</div>
+</body>
+</HTML>
