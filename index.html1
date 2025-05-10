@@ -7,7 +7,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-image: url('file-WPzVHcGjavFGjDnprfrWBQ'); /* Background */
+      background-image: url('Pink-Flower-Best-Wallpaper-43967.jpg'); /* Background */
       background-size: cover;
       background-position: center;
       font-family: 'Segoe UI', sans-serif;
@@ -49,9 +49,9 @@
   <h1>“Step into a dreamy wonderland where butterflies whisper secrets, flowers glow with joy, and magic blooms in every petal! ✨🦋🌸💖🌷💫🌼🍃🌺🌈🌟🌹🎀🧚‍♀️”</h1>
 
   <div class="gallery">
-    <img src="file-5hW9yqu8o5B57h3JKRkMKd" alt="Elegant roses">
-    <img src="file-LQhSHQmUGpQWBkkbvVTDgB" alt="Colorful garden">
-    <img src="file-9VHoHGKCxuCgDoquHWnUH6" alt="Pink blossoms">
+    <img src="125c0c9a0fed2e9f3bb03305c4b3ed64.jpg" alt="Elegant roses">
+    <img src="depositphotos_64909923-stock-photo-beautiful-flowers-background.jpg" alt="Colorful garden">
+    <img src="azalea-1508785048.jpg" alt="Pink blossoms">
   </div>
 
   <div class="poem">
