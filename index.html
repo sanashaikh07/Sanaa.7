@@ -108,28 +108,75 @@
 
 </body>
 <!-- (Your existing content remains unchanged above this line) -->
+  <h1>Doraemon click jump game</h1>
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #a3e4f1;
+      text-align: center;
+    }
+    h2 {
+      margin: 20px 0 5px;
+      color: #1e90ff;
+    }
+    #score {
+      font-size: 18px;
+      color: #333;
+    }
+    #gameArea {
+      width: 350px;
+      height: 200px;
+      margin: 20px auto;
+      background-image: url('https://i.imgur.com/8Z9Yt8G.png');
+      background-size: cover;
+      border: 3px solid #1e90ff;
+      position: relative;
+      overflow: hidden;
+    }
+    #doraemon {
+      width: 50px;
+      height: 50px;
+      background-image: url('https://upload.wikimedia.org/wikipedia/en/0/0c/Doraemon_character.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 0;
+      left: 40px;
+      cursor: pointer;
+    }
+    #block {
+      width: 30px;
+      height: 30px;
+      background: red;
+      position: absolute;
+      bottom: 0;
+      right: -30px;
+      animation: moveBlock 2s infinite linear;
+    }
+    @keyframes moveBlock {
+      0% { right: -30px; }
+      100% { right: 100%; }
+    }
+  </style>
+</head>
+<body>
 
-<h2>🎮 Mini Doraemon Jump Game</h2>
-<p style="text-align:center;">Press Space to make Doraemon jump!</p>
+<h2>Doraemon Click Jump Game</h2>
+<div id="score">Score: 0</div>
 
-<div id="gameArea" style="width: 300px; height: 200px; margin: 0 auto 40px auto; background: white; border: 2px solid #1e90ff; position: relative;">
-  <div id="doraemon" style="width: 40px; height: 40px; background: #1e90ff; border-radius: 50%; position: absolute; bottom: 0; left: 30px;"></div>
-  <div id="block" style="width: 30px; height: 30px; background: red; position: absolute; bottom: 0; right: 0; animation: moveBlock 2s infinite linear;"></div>
+<div id="gameArea">
+  <div id="doraemon"></div>
+  <div id="block"></div>
 </div>
-
-<style>
-  @keyframes moveBlock {
-    0% { right: -30px; }
-    100% { right: 100%; }
-  }
-</style>
 
 <script>
   const doraemon = document.getElementById("doraemon");
+  const block = document.getElementById("block");
+  const scoreDisplay = document.getElementById("score");
   let jumping = false;
+  let score = 0;
 
-  document.body.onkeydown = function(e) {
-    if (e.code === "Space" && !jumping) {
+  doraemon.addEventListener("click", () => {
+    if (!jumping) {
       jumping = true;
       doraemon.style.bottom = "80px";
       setTimeout(() => {
@@ -137,12 +184,30 @@
         jumping = false;
       }, 500);
     }
-  };
+  });
+
+  // Score system based on obstacle passing
+  setInterval(() => {
+    const doraemonLeft = doraemon.offsetLeft;
+    const blockLeft = block.offsetLeft;
+
+    if (blockLeft < doraemonLeft + 50 && blockLeft > doraemonLeft - 30) {
+      const doraemonBottom = parseInt(window.getComputedStyle(doraemon).bottom);
+
+      if (doraemonBottom <= 10) {
+        alert("Game Over! Final Score: " + score);
+        score = 0;
+        scoreDisplay.innerText = "Score: 0";
+      }
+    }
+
+    // Increase score when block resets
+    if (blockLeft < 10) {
+      score++;
+      scoreDisplay.innerText = "Score: " + score;
+    }
+  }, 100);
 </script>
-
-<!-- Footer -->
-<hr>
 <p style="text-align: center;">© 2025 Doraemon Universe | Created with ❤️ for all fans!</p>
-
 </body>
 </html>
