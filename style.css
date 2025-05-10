@@ -1,46 +1,89 @@
 
+
+/* Background and font */
 body {
+    background-color: #fffefc;  /* Almost white (Creamy white) */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to bottom, white, ligh blue); /* white to light blue gradient */
+    color: #222;  /* Dark Gray */
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    line-height: 1.7;
 }
 
-header {
-    background-color: sky-blue;
-    color: white;
-    padding: 20px;
+/* Main heading */
+h1 {
     text-align: center;
+    color: #1e90ff;  /* Dodger Blue (Doraemon Blue) */
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-.cartoon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 40px auto;
-    max-width: 600px;
-    background: linear-gradient(to bottom, light blue, white); /* white to sky blue gradient */
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 20px;
-    border-radius: 12px;
+/* Section headings */
+h2 {
+    color: #ff6347;  /* Tomato Red */
+    margin-top: 30px;
+    font-size: 1.8em;
 }
 
-.cartoon img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.info {
+/* Subheadings */
+h3 {
+    color: #333;  /* Very Dark Gray */
     margin-top: 20px;
-    text-align: center;
 }
 
-footer {
-    background-color: white; /* light blue */
-    color: white;
-    text-align: center;
-    padding: 15px;
-    position: fixed;
-    bottom: 0;
+/* Text and lists */
+p, li {
+    font-size: 1.1em;
+}
+
+/* Lists */
+ul, ol {
+    margin-left: 20px;
+}
+
+/* Table styles */
+table {
     width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #aaa;  /* Medium Gray border */
+}
+
+th {
+    background-color: #f0f8ff;  /* Alice Blue */
+    font-weight: bold;
+}
+
+td, th {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Footer & centered notes */
+footer, hr, p[style*="center"] {
+    text-align: center;
+    color: #888;  /* Light Gray */
+    margin-top: 40px;
+}
+
+/* Mobile-friendly responsiveness */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p, li {
+        font-size: 1em;
+    }
 }
