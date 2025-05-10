@@ -1,14 +1,14 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to bottom, white, #add8e6); /* white to light blue gradient */
+    background: linear-gradient(to bottom, white, ligh blue); /* white to light blue gradient */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #ffffff;
-    color: #00bfff;
+    background-color: sky-blue;
+    color: white;
     padding: 20px;
     text-align: center;
 }
@@ -19,7 +19,7 @@ header {
     align-items: center;
     margin: 40px auto;
     max-width: 600px;
-    background: linear-gradient(to bottom, #ffffff, #87ceeb); /* white to sky blue gradient */
+    background: linear-gradient(to bottom, light blue, white); /* white to sky blue gradient */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 20px;
     border-radius: 12px;
@@ -36,7 +36,7 @@ header {
 }
 
 footer {
-    background-color: #add8e6; /* light blue */
+    background-color: white; /* light blue */
     color: white;
     text-align: center;
     padding: 15px;
