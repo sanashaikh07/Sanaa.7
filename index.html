@@ -107,4 +107,42 @@
   <p style="text-align: center;">© 2025 Doraemon Universe | Created with ❤️ for all fans!</p>
 
 </body>
-  </html>
+<!-- (Your existing content remains unchanged above this line) -->
+
+<h2>🎮 Mini Doraemon Jump Game</h2>
+<p style="text-align:center;">Press Space to make Doraemon jump!</p>
+
+<div id="gameArea" style="width: 300px; height: 200px; margin: 0 auto 40px auto; background: white; border: 2px solid #1e90ff; position: relative;">
+  <div id="doraemon" style="width: 40px; height: 40px; background: #1e90ff; border-radius: 50%; position: absolute; bottom: 0; left: 30px;"></div>
+  <div id="block" style="width: 30px; height: 30px; background: red; position: absolute; bottom: 0; right: 0; animation: moveBlock 2s infinite linear;"></div>
+</div>
+
+<style>
+  @keyframes moveBlock {
+    0% { right: -30px; }
+    100% { right: 100%; }
+  }
+</style>
+
+<script>
+  const doraemon = document.getElementById("doraemon");
+  let jumping = false;
+
+  document.body.onkeydown = function(e) {
+    if (e.code === "Space" && !jumping) {
+      jumping = true;
+      doraemon.style.bottom = "80px";
+      setTimeout(() => {
+        doraemon.style.bottom = "0";
+        jumping = false;
+      }, 500);
+    }
+  };
+</script>
+
+<!-- Footer -->
+<hr>
+<p style="text-align: center;">© 2025 Doraemon Universe | Created with ❤️ for all fans!</p>
+
+</body>
+</html>
